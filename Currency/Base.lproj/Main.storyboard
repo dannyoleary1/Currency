@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -105,6 +105,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df0-A5-yr7">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
                                         <state key="normal" title="Convert"/>
+                                        <connections>
+                                            <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHp-yS-XnU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -117,6 +120,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="baseFlag" destination="b3W-ci-iTU" id="tEB-ko-t1t"/>
+                        <outlet property="baseSymbol" destination="YSD-ti-Knz" id="ZTk-JY-wMx"/>
+                        <outlet property="baseTextField" destination="qWU-HA-lfi" id="dzV-Oa-4xh"/>
+                        <outlet property="gbpFlagLabel" destination="stZ-Tv-mCy" id="Hns-rx-fYg"/>
+                        <outlet property="gbpSymbolLabel" destination="iMA-gM-ejh" id="F34-N6-btm"/>
+                        <outlet property="gbpValueLabel" destination="Cox-tm-tbS" id="r31-jm-9vv"/>
+                        <outlet property="lastUpdatedDateLabel" destination="896-eX-wDg" id="Eqm-5l-6Nn"/>
+                        <outlet property="usdFlagLabel" destination="3Th-pN-ik4" id="bkx-sg-ltY"/>
+                        <outlet property="usdSymbolLabel" destination="YW7-Wj-rqE" id="Gay-e0-pj1"/>
+                        <outlet property="usdValueLabel" destination="rnW-s6-DIE" id="XCn-D6-TEE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
