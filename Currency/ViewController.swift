@@ -34,8 +34,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usdValueLabel: UILabel!
     @IBOutlet weak var usdFlagLabel: UILabel!
     
+    @IBOutlet weak var audSymbolLabel: UILabel!
+    @IBOutlet weak var audValueLabel: UILabel!
+    @IBOutlet weak var audFlagLabel: UILabel!
     
+    @IBOutlet weak var chfSymbolLabel: UILabel!
+    @IBOutlet weak var chfValueLabel: UILabel!
+    @IBOutlet weak var chfFlagLabel: UILabel!
     
+    @IBOutlet weak var jpySymbolLabel: UILabel!
+    @IBOutlet weak var jpyValueLabel: UILabel!
+    @IBOutlet weak var jpyFlagLabel: UILabel!
+    
+    @IBOutlet weak var cadSymbolLabel: UILabel!
+    @IBOutlet weak var cadValueLabel: UILabel!
+    @IBOutlet weak var cadFlagLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,9 +92,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //self.currencyDict[name] = c
         currencyDict["GBP"] = Currency(name:"GBP", rate:1, flag:"🇬🇧", symbol: "£")
         currencyDict["USD"] = Currency(name:"USD", rate:1, flag:"🇺🇸", symbol: "$")
+        currencyDict["AUD"] = Currency(name:"AUD", rate:1, flag:"🇦🇺", symbol: "A$")
+        currencyDict["CHF"] = Currency(name:"CHF", rate:1, flag:"🇨🇭", symbol: "CHF")
+        currencyDict["JPY"] = Currency(name:"JPY", rate:1, flag:"🇯🇵", symbol: "¥")
+        currencyDict["CAD"] = Currency(name:"CAD", rate:1, flag:"🇨🇦", symbol: "$")
     }
     
     func displayCurrencyInfo() {
+        //TODO More dynamic approach
         // GBP
         if let c = currencyDict["GBP"]{
             gbpSymbolLabel.text = c.symbol
@@ -92,6 +110,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
             usdSymbolLabel.text = c.symbol
             usdValueLabel.text = String(format: "%.02f", c.rate)
             usdFlagLabel.text = c.flag
+        }
+        if let c = currencyDict["AUD"]{
+            audSymbolLabel.text = c.symbol
+            audValueLabel.text = String(format: "%.02f", c.rate)
+            audFlagLabel.text = c.flag
+        }
+        if let c = currencyDict["CHF"]{
+            chfSymbolLabel.text = c.symbol
+            chfValueLabel.text = String(format: "%.02f", c.rate)
+            chfFlagLabel.text = c.flag
+        }
+        if let c = currencyDict["JPY"]{
+            jpySymbolLabel.text = c.symbol
+            jpyValueLabel.text = String(format: "%.02f", c.rate)
+            jpyFlagLabel.text = c.flag
+        }
+        if let c = currencyDict["CAD"]{
+            cadSymbolLabel.text = c.symbol
+            cadValueLabel.text = String(format: "%.02f", c.rate)
+            cadFlagLabel.text = c.flag
         }
     }
     
@@ -118,7 +156,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
                 do {
                     let jsonDict = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String:Any]
-                    //print(jsonDict)
+                   // print(jsonDict)
                     
                     if let ratesData = jsonDict["rates"] as? NSDictionary {
                         //print(ratesData)
@@ -142,6 +180,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                 let c:Currency  = self.currencyDict["GBP"]!
                                 c.rate = rate!
                                 self.currencyDict["GBP"] = c
+                            case "AUD":
+                                let c:Currency = self.currencyDict["AUD"]!
+                                c.rate = rate!
+                                self.currencyDict["AUD"] = c
+                            case "CHF":
+                                let c:Currency = self.currencyDict["CHF"]!
+                                c.rate = rate!
+                                self.currencyDict["CHF"] = c
+                            case "JPY":
+                                let c:Currency = self.currencyDict["JPY"]!
+                                c.rate = rate!
+                                self.currencyDict["JPY"] = c
+                            case "CAD":
+                                let c:Currency = self.currencyDict["CAD"]!
+                                c.rate = rate!
+                                self.currencyDict["CAD"] = c
                             default:
                                 print("Ignoring currency: \(String(describing: rate))")
                             }
@@ -169,6 +223,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func convert(_ sender: Any) {
         var resultGBP = 0.0
         var resultUSD = 0.0
+        var resultAUD = 0.0
+        var resultCHF = 0.0
+        var resultJPY = 0.0
+        var resultCAD = 0.0
         
         if let euro = Double(baseTextField.text!) {
             convertValue = euro
@@ -178,6 +236,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if let usd = self.currencyDict["USD"] {
                 resultUSD = convertValue * usd.rate
             }
+            if let aud = self.currencyDict["AUD"]{
+                resultAUD = convertValue * aud.rate
+            }
+            if let chf = self.currencyDict["CHF"]{
+                resultCHF = convertValue * chf.rate
+            }
+            if let jpy = self.currencyDict["JPY"]{
+                resultJPY = convertValue * jpy.rate
+            }
+            if let cad = self.currencyDict["CAD"]{
+                resultCAD = convertValue * cad.rate
+            }
         }
         //GBP
         
@@ -185,6 +255,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         gbpValueLabel.text = String(format: "%.02f", resultGBP)
         usdValueLabel.text = String(format: "%.02f", resultUSD)
+        audValueLabel.text = String(format: "%.02f", resultAUD)
+        chfValueLabel.text = String(format: "%.02f", resultCHF)
+        jpyValueLabel.text = String(format: "%.02f", resultJPY)
+        cadValueLabel.text = String(format: "%.02f", resultCAD)
     }
     
     /*
