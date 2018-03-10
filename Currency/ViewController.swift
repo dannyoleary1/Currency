@@ -51,7 +51,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var cadFlagLabel: UILabel!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -82,11 +81,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
         baseTextField.delegate = self
         baseTextField.addDoneButtonToKeyboard(myAction: #selector(self.baseTextField.resignFirstResponder))
-        
-        
+
         //TODO reference and fiure out
-      
-        
+    
         self.convert(self)
     }
     
@@ -268,21 +265,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         jpyValueLabel.text = String(format: "%.02f", resultJPY)
         cadValueLabel.text = String(format: "%.02f", resultCAD)
     }
-    
-    
- 
-    
-    
 
     
     /*
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
-     
-     }
      */
-    
-    
 }
 
