@@ -140,12 +140,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
-    func getConversionTable() {
-        //var result = "<NOTHING>"
-        print ("lets see when this is called")
+    func getConversionTable(){
         let urlStr:String = "https://api.fixer.io/latest"
-        
         var request = URLRequest(url: URL(string: urlStr)!)
         request.httpMethod = "GET"
         
@@ -154,16 +150,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.addSubview(indicator)
         indicator.startAnimating()
         
-        NSURLConnection.sendAsynchronousRequest(request, queue: OperationQueue.main) { response, data, error in
-            
+        let session = URLSession.shared
+        let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
             indicator.stopAnimating()
-            
+        
             if error == nil{
                 //print(response!)
-                
                 do {
                     let jsonDict = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String:Any]
-                   // print(jsonDict)
+                    // print(jsonDict)
                     
                     if let ratesData = jsonDict["rates"] as? NSDictionary {
                         //print(ratesData)
@@ -206,7 +201,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             default:
                                 print("Ignoring currency: \(String(describing: rate))")
                             }
-                            
                             /*
                              let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
                              self.currencyDict[name] = c
@@ -223,9 +217,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 print("Error")
             }
             
-        }
+            
+        })
+        task.resume()
         
     }
+    
+   
     
     @IBAction func convert(_ sender: Any) {
         //TODO check if this is meant to make a new call.
