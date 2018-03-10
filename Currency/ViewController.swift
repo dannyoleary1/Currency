@@ -50,6 +50,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var cadValueLabel: UILabel!
     @IBOutlet weak var cadFlagLabel: UILabel!
     
+    let dateformatter = DateFormatter()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +71,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         baseFlag.text = baseCurrency.flag
         
         // set up last updated date
-        let dateformatter = DateFormatter()
+        
         dateformatter.dateFormat = "dd/MM/yyyy hh:mm a"
         lastUpdatedDateLabel.text = dateformatter.string(from: lastUpdatedDate)
         
@@ -141,7 +143,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func getConversionTable() {
         //var result = "<NOTHING>"
-        
+        print ("lets see when this is called")
         let urlStr:String = "https://api.fixer.io/latest"
         
         var request = URLRequest(url: URL(string: urlStr)!)
@@ -226,6 +228,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func convert(_ sender: Any) {
+        //TODO check if this is meant to make a new call.
+       convertCurrencies()
+    }
+    
+    @IBAction func refresh(_ sender: Any){
+        convertCurrencies()
+    }
+    
+    func convertCurrencies(){
         var resultGBP = 0.0
         var resultUSD = 0.0
         var resultAUD = 0.0
@@ -264,8 +275,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         chfValueLabel.text = String(format: "%.02f", resultCHF)
         jpyValueLabel.text = String(format: "%.02f", resultJPY)
         cadValueLabel.text = String(format: "%.02f", resultCAD)
+        lastUpdatedDate = Date()
+        lastUpdatedDateLabel.text = dateformatter.string(from: lastUpdatedDate)
     }
-
     
     /*
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
