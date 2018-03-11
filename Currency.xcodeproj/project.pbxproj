@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8C90CBEF2052B463002FCA0E /* DoneCancelToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90CBEE2052B463002FCA0E /* DoneCancelToolbar.swift */; };
+		8CB58C5020557BDB00B0A6D0 /* border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB58C4F20557BDB00B0A6D0 /* border.swift */; };
 		CC481EB840384F435CD64B96 /* Pods_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5E6BB04F86CF7280C93069 /* Pods_Currency.framework */; };
 		FF66C5521FA34F4D00E9354E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF66C5511FA34F4D00E9354E /* AppDelegate.swift */; };
 		FF66C5541FA34F4D00E9354E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF66C5531FA34F4D00E9354E /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		164ADE379CE51C56C841DB89 /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.release.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
 		8C90CBEE2052B463002FCA0E /* DoneCancelToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneCancelToolbar.swift; sourceTree = "<group>"; };
+		8CB58C4F20557BDB00B0A6D0 /* border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = border.swift; sourceTree = "<group>"; };
 		E26B4574B1D2A079C3313B63 /* Pods-Currency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.debug.xcconfig"; sourceTree = "<group>"; };
 		FB5E6BB04F86CF7280C93069 /* Pods_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF66C54E1FA34F4D00E9354E /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				FF66C55D1FA34F4D00E9354E /* Info.plist */,
 				FF66C5651FA3531400E9354E /* README.md */,
 				8C90CBEE2052B463002FCA0E /* DoneCancelToolbar.swift */,
+				8CB58C4F20557BDB00B0A6D0 /* border.swift */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				FF66C5641FA351CE00E9354E /* Currency.swift in Sources */,
 				8C90CBEF2052B463002FCA0E /* DoneCancelToolbar.swift in Sources */,
+				8CB58C5020557BDB00B0A6D0 /* border.swift in Sources */,
 				FF66C5541FA34F4D00E9354E /* ViewController.swift in Sources */,
 				FF66C5521FA34F4D00E9354E /* AppDelegate.swift in Sources */,
 			);

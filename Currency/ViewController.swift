@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate{
     
     //MARK Model holders
     var currencyDict:Dictionary = [String:Currency]()
@@ -38,6 +38,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var audValueLabel: UILabel!
     @IBOutlet weak var audFlagLabel: UILabel!
     
+    
     @IBOutlet weak var chfSymbolLabel: UILabel!
     @IBOutlet weak var chfValueLabel: UILabel!
     @IBOutlet weak var chfFlagLabel: UILabel!
@@ -50,6 +51,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var cadValueLabel: UILabel!
     @IBOutlet weak var cadFlagLabel: UILabel!
     
+    @IBOutlet weak var aud: UIStackView!
+    @IBOutlet weak var chf: UIStackView!
+    @IBOutlet weak var jpy: UIStackView!
+    @IBOutlet weak var usd: UIStackView!
+    @IBOutlet weak var gbp: UIStackView!
+    @IBOutlet weak var cad: UIStackView!
+    
+    var currencyList = ["aud", "chf", "jpy", "usd", "gbp", "cad"]
+    
     let dateformatter = DateFormatter()
     
     
@@ -57,7 +67,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // print("currencyDict has \(self.currencyDict.count) entries")
-        
+
         // create currency dictionary
         self.createCurrencyDictionary()
         
@@ -84,8 +94,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         baseTextField.delegate = self
         baseTextField.addDoneButtonToKeyboard(myAction: #selector(self.baseTextField.resignFirstResponder))
 
-        //TODO reference and fiure out
-    
+        //TODO eference and fiure out
         self.convert(self)
     }
     
@@ -93,6 +102,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func createCurrencyDictionary(){
         //let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
@@ -276,6 +286,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         lastUpdatedDate = Date()
         lastUpdatedDateLabel.text = dateformatter.string(from: lastUpdatedDate)
     }
+    
+
+    
     
     /*
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
