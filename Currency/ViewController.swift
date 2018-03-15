@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UITextFieldDelegate{
     
     //MARK Model holders
@@ -17,6 +18,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
     var lastUpdatedDate:Date = Date()
     
     var convertValue:Double = 0
+    
+    //a list to store heroes
     
     //MARK Outlets
     //@IBOutlet weak var convertedLabel: UILabel!
@@ -62,12 +65,21 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     let dateformatter = DateFormatter()
     
+
+    
+
+    
+   
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // print("currencyDict has \(self.currencyDict.count) entries")
 
+    
+        
         // create currency dictionary
         self.createCurrencyDictionary()
         
@@ -93,17 +105,23 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
         baseTextField.delegate = self
         baseTextField.addDoneButtonToKeyboard(myAction: #selector(self.baseTextField.resignFirstResponder))
+        
+        
+        
 
         //TODO eference and fiure out
         self.convert(self)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
     func createCurrencyDictionary(){
         //let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
         //self.currencyDict[name] = c
@@ -162,7 +180,6 @@ class ViewController: UIViewController, UITextFieldDelegate{
         
         let session = URLSession.shared
         let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
-            indicator.stopAnimating()
         
             if error == nil{
                 //print(response!)
@@ -216,6 +233,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
                              self.currencyDict[name] = c
                              */
                         }
+                        indicator.stopAnimating()
                         self.lastUpdatedDate = Date()
                     }
                 }
@@ -276,7 +294,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         //GBP
         
         //convertedLabel.text = String(describing: resultGBP)
-        
+
         gbpValueLabel.text = String(format: "%.02f", resultGBP)
         usdValueLabel.text = String(format: "%.02f", resultUSD)
         audValueLabel.text = String(format: "%.02f", resultAUD)
