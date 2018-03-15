@@ -47,7 +47,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
     
     var currencyDict:Dictionary = [String:Currency]()
     var testCurrencyDict:Dictionary = [String:CurrencyObject]()
-    var currencyObj  = [CurrencyObject]()
     
     //MARK Model holders
     var currencyArray = [Currency]()
@@ -56,7 +55,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
     
     var convertValue:Double = 0
     
-    //a list to store heroes
     
     //MARK Outlets
     //@IBOutlet weak var convertedLabel: UILabel!
@@ -65,41 +63,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
     @IBOutlet weak var baseTextField: UITextField!
     @IBOutlet weak var baseFlag: UILabel!
     @IBOutlet weak var lastUpdatedDateLabel: UILabel!
-    
-    @IBOutlet weak var gbpSymbolLabel: UILabel!
-    @IBOutlet weak var gbpValueLabel: UILabel!
-    @IBOutlet weak var gbpFlagLabel: UILabel!
-    
-    @IBOutlet weak var usdSymbolLabel: UILabel!
-    @IBOutlet weak var usdValueLabel: UILabel!
-    @IBOutlet weak var usdFlagLabel: UILabel!
-    
-    @IBOutlet weak var audSymbolLabel: UILabel!
-    @IBOutlet weak var audValueLabel: UILabel!
-    @IBOutlet weak var audFlagLabel: UILabel!
-    
-    
-    @IBOutlet weak var chfSymbolLabel: UILabel!
-    @IBOutlet weak var chfValueLabel: UILabel!
-    @IBOutlet weak var chfFlagLabel: UILabel!
-    
-    @IBOutlet weak var jpySymbolLabel: UILabel!
-    @IBOutlet weak var jpyValueLabel: UILabel!
-    @IBOutlet weak var jpyFlagLabel: UILabel!
-    
-    @IBOutlet weak var cadSymbolLabel: UILabel!
-    @IBOutlet weak var cadValueLabel: UILabel!
-    @IBOutlet weak var cadFlagLabel: UILabel!
-    
-    @IBOutlet weak var aud: UIStackView!
-    @IBOutlet weak var chf: UIStackView!
-    @IBOutlet weak var jpy: UIStackView!
-    @IBOutlet weak var usd: UIStackView!
-    @IBOutlet weak var gbp: UIStackView!
-    @IBOutlet weak var cad: UIStackView!
-    
-    var currencyList = ["aud", "chf", "jpy", "usd", "gbp", "cad"]
-    
+
     let dateformatter = DateFormatter()
     
     override func viewDidLoad() {
@@ -107,10 +71,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         // Do any additional setup after loading the view, typically from a nib.
         // print("currencyDict has \(self.currencyDict.count) entries")
 
-    
-        createCurrencyList()
-        // create currency dictionary
-        self.createCurrencyDictionary()
+        createCurrencyListv2()
+        tableView.reloadData()
         
         // get latest currency values
         getConversionTable()
@@ -126,10 +88,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         dateformatter.dateFormat = "dd/MM/yyyy hh:mm a"
         lastUpdatedDateLabel.text = dateformatter.string(from: lastUpdatedDate)
         
-        // display currency info
-        self.displayCurrencyInfo()
         
-        tableView.reloadData()
         
         baseTextField.delegate = self
         baseTextField.addDoneButtonToKeyboard(myAction: #selector(self.baseTextField.resignFirstResponder))
@@ -141,80 +100,19 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
     func createCurrencyListv2(){
         //let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
         //self.currencyDict[name] = c
-        testCurrencyDict["GBP"] = CurrencyObject(fullName: "Great British Pound", symbol: "£", value: "1.0", flag: "🇬🇧")
+        testCurrencyDict["GBP"] = CurrencyObject(fullName: "Great British Pound", symbol: "£", value: "1.00", flag: "🇬🇧")
         testCurrencyDict["USD"] = CurrencyObject(fullName: "United States Dollar", symbol: "$",
-                                          value: "1.0", flag: "🇺🇸")
+                                          value: "1.00", flag: "🇺🇸")
         testCurrencyDict["AUD"] = CurrencyObject(fullName: "Austrailian Dollar", symbol: "A$",
-                                          value: "1.0", flag: "🇦🇺")
-        testCurrencyDict["CHF"] = CurrencyObject(fullName: "Swiss Frank", symbol: "CHF", value: "1.0", flag: "🇨🇭")
-        testCurrencyDict["JPY"] = CurrencyObject(fullName: "Japeneese Yen", symbol: "¥", value: "1.0", flag: "🇯🇵")
-        testCurrencyDict["CAD"] = CurrencyObject(fullName: "Canadian Dollar", symbol: "$", value: "1.0", flag: "🇨🇦")
+                                          value: "1.00", flag: "🇦🇺")
+        testCurrencyDict["CHF"] = CurrencyObject(fullName: "Swiss Frank", symbol: "CHF", value: "1.00", flag: "🇨🇭")
+        testCurrencyDict["JPY"] = CurrencyObject(fullName: "Japeneese Yen", symbol: "¥", value: "1.00", flag: "🇯🇵")
+        testCurrencyDict["CAD"] = CurrencyObject(fullName: "Canadian Dollar", symbol: "$", value: "1.00", flag: "🇨🇦")
     }
-    
-    func createCurrencyList(){
-        //let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
-        //self.currencyDict[name] = c
-        currencyObj.append(CurrencyObject(fullName: "Great British Pound", symbol: "£", value: "1.0", flag: "🇬🇧"))
-        currencyObj.append(CurrencyObject(fullName: "United States Dollar", symbol: "$",
-                                          value: "1.0", flag: "🇺🇸"))
-        currencyObj.append(CurrencyObject(fullName: "Austrailian Dollar", symbol: "A$",
-                                          value: "1.0", flag: "🇦🇺"))
-        currencyObj.append(CurrencyObject(fullName: "Swiss Frank", symbol: "CHF", value: "1.0", flag: "🇨🇭"))
-        currencyObj.append(CurrencyObject(fullName: "Japeneese Yen", symbol: "¥", value: "1.0", flag: "🇯🇵"))
-        currencyObj.append(CurrencyObject(fullName: "Canadian Dollar", symbol: "$", value: "1.0", flag: "🇨🇦"))
-    }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    func createCurrencyDictionary(){
-        //let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
-        //self.currencyDict[name] = c
-        currencyDict["GBP"] = Currency(name:"GBP", rate:1, flag:"🇬🇧", symbol: "£")
-        currencyDict["USD"] = Currency(name:"USD", rate:1, flag:"🇺🇸", symbol: "$")
-        currencyDict["AUD"] = Currency(name:"AUD", rate:1, flag:"🇦🇺", symbol: "A$")
-        currencyDict["CHF"] = Currency(name:"CHF", rate:1, flag:"🇨🇭", symbol: "CHF")
-        currencyDict["JPY"] = Currency(name:"JPY", rate:1, flag:"🇯🇵", symbol: "¥")
-        currencyDict["CAD"] = Currency(name:"CAD", rate:1, flag:"🇨🇦", symbol: "$")
-    }
-    
-    func displayCurrencyInfo() {
-        //TODO More dynamic approach
-        // GBP
-        if let c = currencyDict["GBP"]{
-            gbpSymbolLabel.text = c.symbol
-            gbpValueLabel.text = String(format: "%.02f", c.rate)
-            gbpFlagLabel.text = c.flag
-        }
-        if let c = currencyDict["USD"]{
-            usdSymbolLabel.text = c.symbol
-            usdValueLabel.text = String(format: "%.02f", c.rate)
-            usdFlagLabel.text = c.flag
-        }
-        if let c = currencyDict["AUD"]{
-            audSymbolLabel.text = c.symbol
-            audValueLabel.text = String(format: "%.02f", c.rate)
-            audFlagLabel.text = c.flag
-        }
-        if let c = currencyDict["CHF"]{
-            chfSymbolLabel.text = c.symbol
-            chfValueLabel.text = String(format: "%.02f", c.rate)
-            chfFlagLabel.text = c.flag
-        }
-        if let c = currencyDict["JPY"]{
-            jpySymbolLabel.text = c.symbol
-            jpyValueLabel.text = String(format: "%.02f", c.rate)
-            jpyFlagLabel.text = c.flag
-        }
-        if let c = currencyDict["CAD"]{
-            cadSymbolLabel.text = c.symbol
-            cadValueLabel.text = String(format: "%.02f", c.rate)
-            cadFlagLabel.text = c.flag
-        }
     }
     
     func getConversionTable(){
@@ -244,43 +142,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
                             let rate = (rate.value as? NSNumber)?.doubleValue
                             //var symbol:String
                             //var flag:String
-                            
-                            switch(name){
-                            case "USD":
-                                //symbol = "$"
-                                //flag = "🇺🇸"
-                                let c:Currency  = self.currencyDict["USD"]!
-                                c.rate = rate!
-                                self.currencyDict["USD"] = c
-                            case "GBP":
-                                //symbol = "£"
-                                //flag = "🇬🇧"
-                                let c:Currency  = self.currencyDict["GBP"]!
-                                c.rate = rate!
-                                self.currencyDict["GBP"] = c
-                            case "AUD":
-                                let c:Currency = self.currencyDict["AUD"]!
-                                c.rate = rate!
-                                self.currencyDict["AUD"] = c
-                            case "CHF":
-                                let c:Currency = self.currencyDict["CHF"]!
-                                c.rate = rate!
-                                self.currencyDict["CHF"] = c
-                            case "JPY":
-                                let c:Currency = self.currencyDict["JPY"]!
-                                c.rate = rate!
-                                self.currencyDict["JPY"] = c
-                            case "CAD":
-                                let c:Currency = self.currencyDict["CAD"]!
-                                c.rate = rate!
-                                self.currencyDict["CAD"] = c
-                            default:
+                            if let currentCurrency = self.testCurrencyDict[name]{
+                                currentCurrency.value = String(format: "%.02f", rate!)
+                                self.testCurrencyDict[name] = currentCurrency
+                            }
+                            else{
                                 print("Ignoring currency: \(String(describing: rate))")
                             }
-                            /*
-                             let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
-                             self.currencyDict[name] = c
-                             */
                         }
                         indicator.stopAnimating()
                         self.lastUpdatedDate = Date()
@@ -293,8 +161,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
             else{
                 print("Error")
             }
-            
-            
         })
         task.resume()
         
@@ -312,44 +178,17 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
     }
     
     func convertCurrencies(){
-        var resultGBP = 0.0
-        var resultUSD = 0.0
-        var resultAUD = 0.0
-        var resultCHF = 0.0
-        var resultJPY = 0.0
-        var resultCAD = 0.0
-        
+        var result = 0.0
         if let euro = Double(baseTextField.text!) {
             convertValue = euro
-            if let gbp = self.currencyDict["GBP"] {
-                resultGBP = convertValue * gbp.rate
-            }
-            if let usd = self.currencyDict["USD"] {
-                resultUSD = convertValue * usd.rate
-            }
-            if let aud = self.currencyDict["AUD"]{
-                resultAUD = convertValue * aud.rate
-            }
-            if let chf = self.currencyDict["CHF"]{
-                resultCHF = convertValue * chf.rate
-            }
-            if let jpy = self.currencyDict["JPY"]{
-                resultJPY = convertValue * jpy.rate
-            }
-            if let cad = self.currencyDict["CAD"]{
-                resultCAD = convertValue * cad.rate
+            for (key, value) in testCurrencyDict{
+                if let entry = self.testCurrencyDict[key]{
+                    result = convertValue * Double(entry.value)!
+                }
+                testCurrencyDict[key]?.value = String(format: "%.02f", result)
             }
         }
-        //GBP
-        
-        //convertedLabel.text = String(describing: resultGBP)
-
-        gbpValueLabel.text = String(format: "%.02f", resultGBP)
-        usdValueLabel.text = String(format: "%.02f", resultUSD)
-        audValueLabel.text = String(format: "%.02f", resultAUD)
-        chfValueLabel.text = String(format: "%.02f", resultCHF)
-        jpyValueLabel.text = String(format: "%.02f", resultJPY)
-        cadValueLabel.text = String(format: "%.02f", resultCAD)
+        tableView.reloadData()
         lastUpdatedDate = Date()
         lastUpdatedDateLabel.text = dateformatter.string(from: lastUpdatedDate)
     }
@@ -359,7 +198,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currencyObj.count
+        return testCurrencyDict.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -367,7 +206,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         
         //getting the hero for the specified position
         let currentCur: CurrencyObject
-        currentCur = currencyObj[indexPath.row]
+        currentCur = Array(testCurrencyDict.values)[indexPath.row]
 
         cell.symbol.text = currentCur.symbol
         cell.value.text = currentCur.value
