@@ -8,40 +8,10 @@
 
 import UIKit
 
-class CurrencyObject{
-    var fullName: String!
-    var symbol: String!
-    var value: String!
-    var flag: String!
-    init(fullName: String?, symbol: String?, value: String?, flag: String?) {
-            self.fullName = fullName
-            self.symbol = symbol
-            self.value = value
-            self.flag = flag
-        }
-}
-
-class CurrencyTableView: UITableViewCell {
-    @IBOutlet weak var symbol: UILabel!
-    @IBOutlet weak var value: UILabel!
-    @IBOutlet weak var flag: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
-}
 
 class TableViewController: UITableViewController {
 
-    var currencyDict:Dictionary = [String:Currency]()
-    var currencyObj  = [CurrencyObject]()
+    
     
     
     
@@ -65,52 +35,10 @@ class TableViewController: UITableViewController {
     }
     
 
-    func createCurrencyList(){
-        //let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
-        //self.currencyDict[name] = c
-        currencyObj.append(CurrencyObject(fullName: "Great British Pound", symbol: "£", value: "1.0", flag: "🇬🇧"))
-        currencyObj.append(CurrencyObject(fullName: "United States Dollar", symbol: "$",
-                                          value: "1.0", flag: "🇺🇸"))
-        currencyObj.append(CurrencyObject(fullName: "Austrailian Dollar", symbol: "A$",
-                                          value: "1.0", flag: "🇦🇺"))
-        currencyObj.append(CurrencyObject(fullName: "Swiss Frank", symbol: "CHF", value: "1.0", flag: "🇨🇭"))
-        currencyObj.append(CurrencyObject(fullName: "Japeneese Yen", symbol: "¥", value: "1.0", flag: "🇯🇵"))
-        currencyObj.append(CurrencyObject(fullName: "Canadian Dollar", symbol: "$", value: "1.0", flag: "🇨🇦"))
-    }
-
     // MARK: - Table view data source
 
 
-    
-    // MARK: - Table view data source
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currencyObj.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CurrencyTableView
-        
-        //getting the hero for the specified position
-        let currentCur: CurrencyObject
-        currentCur = currencyObj[indexPath.row]
-        
-        //displaying values
-        print ("_______")
-        print (indexPath.row)
-        print (currentCur.symbol)
-        print (cell)
-        print (cell.symbol)
-        
-        cell.symbol.text = currentCur.symbol
-        cell.value.text = currentCur.value
-        cell.flag.text = currentCur.flag
-        return cell
-    }
+
     
     
 

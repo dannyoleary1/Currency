@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C2D85662056C3B900E882C7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2D85652056C3B900E882C7 /* TableViewController.swift */; };
 		8C90CBEF2052B463002FCA0E /* DoneCancelToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90CBEE2052B463002FCA0E /* DoneCancelToolbar.swift */; };
 		8CB58C5020557BDB00B0A6D0 /* border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB58C4F20557BDB00B0A6D0 /* border.swift */; };
 		8CE3A063205A90C5004E0444 /* StatusBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3A062205A90C5004E0444 /* StatusBarColor.swift */; };
@@ -24,7 +23,6 @@
 
 /* Begin PBXFileReference section */
 		164ADE379CE51C56C841DB89 /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.release.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
-		8C2D85652056C3B900E882C7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8C90CBEE2052B463002FCA0E /* DoneCancelToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneCancelToolbar.swift; sourceTree = "<group>"; };
 		8CB58C4F20557BDB00B0A6D0 /* border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = border.swift; sourceTree = "<group>"; };
 		8CE3A062205A90C5004E0444 /* StatusBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarColor.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				FF66C5651FA3531400E9354E /* README.md */,
 				8C90CBEE2052B463002FCA0E /* DoneCancelToolbar.swift */,
 				8CB58C4F20557BDB00B0A6D0 /* border.swift */,
-				8C2D85652056C3B900E882C7 /* TableViewController.swift */,
 				8CE3A062205A90C5004E0444 /* StatusBarColor.swift */,
 				8CE3A066205A9F15004E0444 /* LaunchScreenViewController.swift */,
 			);
@@ -240,7 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF66C5641FA351CE00E9354E /* Currency.swift in Sources */,
-				8C2D85662056C3B900E882C7 /* TableViewController.swift in Sources */,
 				8CE3A067205A9F15004E0444 /* LaunchScreenViewController.swift in Sources */,
 				8C90CBEF2052B463002FCA0E /* DoneCancelToolbar.swift in Sources */,
 				8CB58C5020557BDB00B0A6D0 /* border.swift in Sources */,

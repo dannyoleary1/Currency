@@ -8,11 +8,48 @@
 
 import UIKit
 
+class CurrencyObject{
+    var fullName: String!
+    var symbol: String!
+    var value: String!
+    var flag: String!
+    init(fullName: String?, symbol: String?, value: String?, flag: String?) {
+        self.fullName = fullName
+        self.symbol = symbol
+        self.value = value
+        self.flag = flag
+    }
+}
 
-class ViewController: UIViewController, UITextFieldDelegate{
+class CurrencyTableView: UITableViewCell {
+    @IBOutlet weak var symbol: UILabel!
+    @IBOutlet weak var value: UILabel!
+    @IBOutlet weak var flag: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+}
+
+
+
+class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource{
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var currencyDict:Dictionary = [String:Currency]()
+    var testCurrencyDict:Dictionary = [String:CurrencyObject]()
+    var currencyObj  = [CurrencyObject]()
     
     //MARK Model holders
-    var currencyDict:Dictionary = [String:Currency]()
     var currencyArray = [Currency]()
     var baseCurrency:Currency = Currency.init(name:"EUR", rate:1, flag:"🇪🇺", symbol:"€")!
     var lastUpdatedDate:Date = Date()
@@ -65,21 +102,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     let dateformatter = DateFormatter()
     
-
-    
-
-    
-   
-    
-   
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // print("currencyDict has \(self.currencyDict.count) entries")
 
     
-        
+        createCurrencyList()
         // create currency dictionary
         self.createCurrencyDictionary()
         
@@ -100,22 +129,42 @@ class ViewController: UIViewController, UITextFieldDelegate{
         // display currency info
         self.displayCurrencyInfo()
         
+        tableView.reloadData()
         
-        // setup view mover
-    
         baseTextField.delegate = self
         baseTextField.addDoneButtonToKeyboard(myAction: #selector(self.baseTextField.resignFirstResponder))
-        
-        
-        
 
         //TODO eference and fiure out
         self.convert(self)
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+    func createCurrencyListv2(){
+        //let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
+        //self.currencyDict[name] = c
+        testCurrencyDict["GBP"] = CurrencyObject(fullName: "Great British Pound", symbol: "£", value: "1.0", flag: "🇬🇧")
+        testCurrencyDict["USD"] = CurrencyObject(fullName: "United States Dollar", symbol: "$",
+                                          value: "1.0", flag: "🇺🇸")
+        testCurrencyDict["AUD"] = CurrencyObject(fullName: "Austrailian Dollar", symbol: "A$",
+                                          value: "1.0", flag: "🇦🇺")
+        testCurrencyDict["CHF"] = CurrencyObject(fullName: "Swiss Frank", symbol: "CHF", value: "1.0", flag: "🇨🇭")
+        testCurrencyDict["JPY"] = CurrencyObject(fullName: "Japeneese Yen", symbol: "¥", value: "1.0", flag: "🇯🇵")
+        testCurrencyDict["CAD"] = CurrencyObject(fullName: "Canadian Dollar", symbol: "$", value: "1.0", flag: "🇨🇦")
     }
+    
+    func createCurrencyList(){
+        //let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
+        //self.currencyDict[name] = c
+        currencyObj.append(CurrencyObject(fullName: "Great British Pound", symbol: "£", value: "1.0", flag: "🇬🇧"))
+        currencyObj.append(CurrencyObject(fullName: "United States Dollar", symbol: "$",
+                                          value: "1.0", flag: "🇺🇸"))
+        currencyObj.append(CurrencyObject(fullName: "Austrailian Dollar", symbol: "A$",
+                                          value: "1.0", flag: "🇦🇺"))
+        currencyObj.append(CurrencyObject(fullName: "Swiss Frank", symbol: "CHF", value: "1.0", flag: "🇨🇭"))
+        currencyObj.append(CurrencyObject(fullName: "Japeneese Yen", symbol: "¥", value: "1.0", flag: "🇯🇵"))
+        currencyObj.append(CurrencyObject(fullName: "Canadian Dollar", symbol: "$", value: "1.0", flag: "🇨🇦"))
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -303,6 +352,27 @@ class ViewController: UIViewController, UITextFieldDelegate{
         cadValueLabel.text = String(format: "%.02f", resultCAD)
         lastUpdatedDate = Date()
         lastUpdatedDateLabel.text = dateformatter.string(from: lastUpdatedDate)
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return currencyObj.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CurrencyTableView
+        
+        //getting the hero for the specified position
+        let currentCur: CurrencyObject
+        currentCur = currencyObj[indexPath.row]
+
+        cell.symbol.text = currentCur.symbol
+        cell.value.text = currentCur.value
+        cell.flag.text = currentCur.flag
+        return cell
     }
     
 
