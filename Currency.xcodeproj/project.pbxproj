@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8C90CBEF2052B463002FCA0E /* DoneCancelToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90CBEE2052B463002FCA0E /* DoneCancelToolbar.swift */; };
 		8CB58C5020557BDB00B0A6D0 /* border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB58C4F20557BDB00B0A6D0 /* border.swift */; };
+		8CD3835A205B399700ECEDC6 /* AllCurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD38359205B399700ECEDC6 /* AllCurrencies.swift */; };
+		8CD3835C205B3B5900ECEDC6 /* CurrencyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD3835B205B3B5900ECEDC6 /* CurrencyObject.swift */; };
+		8CD3835E205B3E4500ECEDC6 /* CurrencyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD3835D205B3E4500ECEDC6 /* CurrencyTableView.swift */; };
 		8CE3A063205A90C5004E0444 /* StatusBarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3A062205A90C5004E0444 /* StatusBarColor.swift */; };
 		8CE3A067205A9F15004E0444 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE3A066205A9F15004E0444 /* LaunchScreenViewController.swift */; };
 		CC481EB840384F435CD64B96 /* Pods_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5E6BB04F86CF7280C93069 /* Pods_Currency.framework */; };
@@ -25,6 +28,9 @@
 		164ADE379CE51C56C841DB89 /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.release.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
 		8C90CBEE2052B463002FCA0E /* DoneCancelToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneCancelToolbar.swift; sourceTree = "<group>"; };
 		8CB58C4F20557BDB00B0A6D0 /* border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = border.swift; sourceTree = "<group>"; };
+		8CD38359205B399700ECEDC6 /* AllCurrencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCurrencies.swift; sourceTree = "<group>"; };
+		8CD3835B205B3B5900ECEDC6 /* CurrencyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyObject.swift; sourceTree = "<group>"; };
+		8CD3835D205B3E4500ECEDC6 /* CurrencyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableView.swift; sourceTree = "<group>"; };
 		8CE3A062205A90C5004E0444 /* StatusBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarColor.swift; sourceTree = "<group>"; };
 		8CE3A066205A9F15004E0444 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		E26B4574B1D2A079C3313B63 /* Pods-Currency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +108,9 @@
 				8CB58C4F20557BDB00B0A6D0 /* border.swift */,
 				8CE3A062205A90C5004E0444 /* StatusBarColor.swift */,
 				8CE3A066205A9F15004E0444 /* LaunchScreenViewController.swift */,
+				8CD38359205B399700ECEDC6 /* AllCurrencies.swift */,
+				8CD3835B205B3B5900ECEDC6 /* CurrencyObject.swift */,
+				8CD3835D205B3E4500ECEDC6 /* CurrencyTableView.swift */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -218,11 +227,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Currency/Pods-Currency-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TCPickerView/TCPickerView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TCPickerView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -238,8 +251,11 @@
 			files = (
 				FF66C5641FA351CE00E9354E /* Currency.swift in Sources */,
 				8CE3A067205A9F15004E0444 /* LaunchScreenViewController.swift in Sources */,
+				8CD3835A205B399700ECEDC6 /* AllCurrencies.swift in Sources */,
 				8C90CBEF2052B463002FCA0E /* DoneCancelToolbar.swift in Sources */,
+				8CD3835E205B3E4500ECEDC6 /* CurrencyTableView.swift in Sources */,
 				8CB58C5020557BDB00B0A6D0 /* border.swift in Sources */,
+				8CD3835C205B3B5900ECEDC6 /* CurrencyObject.swift in Sources */,
 				FF66C5541FA34F4D00E9354E /* ViewController.swift in Sources */,
 				FF66C5521FA34F4D00E9354E /* AppDelegate.swift in Sources */,
 				8CE3A063205A90C5004E0444 /* StatusBarColor.swift in Sources */,

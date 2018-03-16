@@ -1,12 +1,18 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
   - IQKeyboardManagerSwift (5.0.8)
+  - TCPickerView (0.1.9)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - IQKeyboardManagerSwift
+  - TCPickerView
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  TCPickerView: 4bacd1f81121b3a12ff4624da657e3dfd1738383
 
-PODFILE CHECKSUM: 7be6e8b14be73722c1a3b80bfba78685de45153f
+PODFILE CHECKSUM: ecddb3a21294f4a944402a479f761f70a09ffd9f
 
 COCOAPODS: 1.4.0

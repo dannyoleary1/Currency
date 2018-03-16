@@ -7,52 +7,17 @@
 //
 
 import UIKit
-
-class CurrencyObject{
-    var fullName: String!
-    var symbol: String!
-    var value: String!
-    var flag: String!
-    init(fullName: String?, symbol: String?, value: String?, flag: String?) {
-        self.fullName = fullName
-        self.symbol = symbol
-        self.value = value
-        self.flag = flag
-    }
-}
-
-class CurrencyTableView: UITableViewCell {
-    @IBOutlet weak var symbol: UILabel!
-    @IBOutlet weak var value: UILabel!
-    @IBOutlet weak var flag: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
-}
-
+import TCPickerView
+import ActionSheetPicker_3_0
 
 
 class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource{
     
     
     @IBOutlet weak var tableView: UITableView!
-    
-    var currencyDict:Dictionary = [String:Currency]()
-    var testCurrencyDict:Dictionary = [String:CurrencyObject]()
-    
-    //MARK Model holders
-    var currencyArray = [Currency]()
+    var currencyDict:Dictionary = [String:CurrencyObject]()
     var baseCurrency:Currency = Currency.init(name:"EUR", rate:1, flag:"🇪🇺", symbol:"€")!
     var lastUpdatedDate:Date = Date()
-    
     var convertValue:Double = 0
     
     
@@ -71,7 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         // Do any additional setup after loading the view, typically from a nib.
         // print("currencyDict has \(self.currencyDict.count) entries")
 
-        createCurrencyListv2()
+        createCurrencyList()
         tableView.reloadData()
         
         // get latest currency values
@@ -97,17 +62,17 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         self.convert(self)
     }
     
-    func createCurrencyListv2(){
+    func createCurrencyList(){
         //let c:Currency = Currency(name: name, rate: rate!, flag: flag, symbol: symbol)!
         //self.currencyDict[name] = c
-        testCurrencyDict["GBP"] = CurrencyObject(fullName: "Great British Pound", symbol: "£", value: "1.00", flag: "🇬🇧")
-        testCurrencyDict["USD"] = CurrencyObject(fullName: "United States Dollar", symbol: "$",
+        currencyDict["GBP"] = CurrencyObject(fullName: "Great British Pound", symbol: "£", value: "1.00", flag: "🇬🇧")
+        currencyDict["USD"] = CurrencyObject(fullName: "United States Dollar", symbol: "$",
                                           value: "1.00", flag: "🇺🇸")
-        testCurrencyDict["AUD"] = CurrencyObject(fullName: "Austrailian Dollar", symbol: "A$",
+        currencyDict["AUD"] = CurrencyObject(fullName: "Austrailian Dollar", symbol: "A$",
                                           value: "1.00", flag: "🇦🇺")
-        testCurrencyDict["CHF"] = CurrencyObject(fullName: "Swiss Frank", symbol: "CHF", value: "1.00", flag: "🇨🇭")
-        testCurrencyDict["JPY"] = CurrencyObject(fullName: "Japeneese Yen", symbol: "¥", value: "1.00", flag: "🇯🇵")
-        testCurrencyDict["CAD"] = CurrencyObject(fullName: "Canadian Dollar", symbol: "$", value: "1.00", flag: "🇨🇦")
+        currencyDict["CHF"] = CurrencyObject(fullName: "Swiss Frank", symbol: "CHF", value: "1.00", flag: "🇨🇭")
+        currencyDict["JPY"] = CurrencyObject(fullName: "Japeneese Yen", symbol: "¥", value: "1.00", flag: "🇯🇵")
+        currencyDict["CAD"] = CurrencyObject(fullName: "Canadian Dollar", symbol: "$", value: "1.00", flag: "🇨🇦")
     }
     
     override func didReceiveMemoryWarning() {
@@ -142,16 +107,19 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
                             let rate = (rate.value as? NSNumber)?.doubleValue
                             //var symbol:String
                             //var flag:String
-                            if let currentCurrency = self.testCurrencyDict[name]{
+                            if let currentCurrency = self.currencyDict[name]{
                                 currentCurrency.value = String(format: "%.02f", rate!)
-                                self.testCurrencyDict[name] = currentCurrency
+                                self.currencyDict[name] = currentCurrency
                             }
                             else{
                                 print("Ignoring currency: \(String(describing: rate))")
+                                print("Currency Name: \(String(name))")
                             }
                         }
-                        indicator.stopAnimating()
-                        self.lastUpdatedDate = Date()
+                        DispatchQueue.main.async {
+                            indicator.stopAnimating()
+                            self.lastUpdatedDate = Date()
+                        }
                     }
                 }
                 catch let error as NSError{
@@ -166,14 +134,15 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         
     }
     
-   
-    
     @IBAction func convert(_ sender: Any) {
         //TODO check if this is meant to make a new call.
+        //getConversionTable()
        convertCurrencies()
     }
     
     @IBAction func refresh(_ sender: Any){
+        //TODO Is this supposed to refresh to 1.0?
+        getConversionTable()
         convertCurrencies()
     }
     
@@ -181,11 +150,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         var result = 0.0
         if let euro = Double(baseTextField.text!) {
             convertValue = euro
-            for (key, value) in testCurrencyDict{
-                if let entry = self.testCurrencyDict[key]{
+            for (key, value) in currencyDict{
+                if let entry = self.currencyDict[key]{
                     result = convertValue * Double(entry.value)!
                 }
-                testCurrencyDict[key]?.value = String(format: "%.02f", result)
+                currencyDict[key]?.value = String(format: "%.02f", result)
             }
         }
         tableView.reloadData()
@@ -198,7 +167,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return testCurrencyDict.count
+        return currencyDict.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -206,15 +175,37 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         
         //getting the hero for the specified position
         let currentCur: CurrencyObject
-        currentCur = Array(testCurrencyDict.values)[indexPath.row]
-
+        currentCur = Array(currencyDict.values)[indexPath.row]
+        
+        cell.fullName.text = currentCur.fullName
         cell.symbol.text = currentCur.symbol
         cell.value.text = currentCur.value
         cell.flag.text = currentCur.flag
         return cell
     }
     
-
+    
+    @IBAction func buttonAdd(_ sender: Any) {
+        var allC = AllCurrencies.additionalCurrencies()
+        var names = [String]()
+        for value in allC{
+            names.append(value.fullName)
+        }
+        ActionSheetMultipleStringPicker.show(withTitle: "Multiple String Picker", rows: [
+            names,
+            ], initialSelection: [1, 1], doneBlock: {
+                picker, indexes, values in
+                //refresh of the currencies is needed since they are not in the current cache
+                
+                let index = indexes![0] as! Int
+                let currentEntry = allC[index]
+                self.currencyDict[currentEntry.symbol] = currentEntry
+                self.getConversionTable()
+                self.tableView.reloadData()
+                
+                return
+        }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
+    }
     
     
     /*

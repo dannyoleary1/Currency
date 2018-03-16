@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A4EBEAC03B8F0B4D2BE13BA0BE60602"
-               BuildableName = "Pods_Currency.framework"
-               BlueprintName = "Pods-Currency"
+               BlueprintIdentifier = "E164DCF3861D7EFA082BC89A80328DFF"
+               BuildableName = "TCPickerView.bundle"
+               BlueprintName = "TCPickerView-TCPickerView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A4EBEAC03B8F0B4D2BE13BA0BE60602"
-            BuildableName = "Pods_Currency.framework"
-            BlueprintName = "Pods-Currency"
+            BlueprintIdentifier = "E164DCF3861D7EFA082BC89A80328DFF"
+            BuildableName = "TCPickerView.bundle"
+            BlueprintName = "TCPickerView-TCPickerView"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

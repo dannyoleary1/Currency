@@ -7,36 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F638AFD879930344CAFFE239806EF /* IQToolbar.swift */; };
-		039B57D93D164D3ED084500F08C1811B /* Pods-Currency-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3396581DC72368F14F0110624164E316 /* Pods-Currency-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		119FD86C6EC201DCD4DEFF2AFDB1A84E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE1AEDD271C7C25BEFEA98E9DD262D7 /* IQTitleBarButtonItem.swift */; };
-		2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD48B5237605C364198308127FB553 /* IQUIScrollView+Additions.swift */; };
-		2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7183B109708659884E4F687AA8504B8 /* IQKeyboardManager.bundle */; };
-		3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50B2EA16B60164208491F69355110B /* IQUIView+Hierarchy.swift */; };
-		4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFE1543D375F3657F0722C3946EE2AD /* IQKeyboardManager.swift */; };
-		5630A4C8C0C3567FA441965B3BB55BD3 /* Pods-Currency-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62A8F291C56B38C7E21E3BBEEFFE88 /* Pods-Currency-dummy.m */; };
-		64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CCF7D93C6248F9B8FE8E3134B41D58 /* IQUIWindow+Hierarchy.swift */; };
+		02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36869EE4C58A39717A638586B5471B5 /* IQToolbar.swift */; };
+		049D3303FFC810B2D01B75141FE2A61E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00126141699E2D1424118C24D57079C7 /* Media.xcassets */; };
+		0E3BFC96C6A7CCADAF3DA6C3C80F35EC /* SWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BBE0A09DA120091C734242D74E86457 /* SWActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12DA6ADB40FE62F9F5F6826E8099AB37 /* Pods-Currency-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA62A8F291C56B38C7E21E3BBEEFFE88 /* Pods-Currency-dummy.m */; };
+		1648AB9E52071D70CD79280AB21C94D1 /* ActionSheetDistancePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F2E2A58ACFB4A023E5F160CCA74870 /* ActionSheetDistancePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0130E51AF422F68818416677EE6595 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B281E8CFC62941EB8BB8FA3F23CF042 /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1CF5292E8BC416738060C43B2A078682 /* TCPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD13DF04C28FDFD94E42CBBBA57E8E2E /* TCPickerView.bundle */; };
+		1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C45876E947AEFCCBF5B530F7C1F3E6 /* IQTitleBarButtonItem.swift */; };
+		20951B518ECE90FEA15F57CFB3ACAB5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966AF11A3CA37A5632673F89C291E2F /* IQUIScrollView+Additions.swift */; };
+		246DD685C951FFF04D55232211F076CD /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CBB9D96930ED916CB8000EC9B3B958 /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2680FB2A9AAFE79796C23A20390CEF45 /* AbstractActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = A5728D779D8C2F3674C89DE65AA35530 /* AbstractActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C34B43AFA7A1D88AB188801C76E08C /* ActionSheetPicker-3.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A97079425F59A086941BACB27768CE18 /* ActionSheetPicker-3.0-dummy.m */; };
+		2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F9833E8B290191DD7161AE216AC70F65 /* IQKeyboardManager.bundle */; };
+		3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EB31443A1DA85816BD148A54ADE79 /* IQUIView+Hierarchy.swift */; };
+		3C8D2470783809376BA929A9603C21D9 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6AC89E3AB740B5A51A6C9BC995F78B /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		430E0A46B42F47FF79AE16168D1613E9 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C158A14635173989DD8BFC453EA4BC /* ActionSheetLocalePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6F7E27FC0E58E461B0871B7D55A60C /* IQKeyboardManager.swift */; };
+		490EB82E3DDE7AFA6F17A3458FD122FD /* TCPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2045DF89FDFBFBD8A693F3DC63918562 /* TCPickerTableViewCell.swift */; };
+		64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C68E7919C8594CDC57C42941991CE /* IQUIWindow+Hierarchy.swift */; };
+		6C16BD3BCB1B65194E7CEA5CF15AD446 /* ActionSheetMultipleStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 859E125D69D13D679FC8C83B6C9447CA /* ActionSheetMultipleStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73B5B89735246241B271F8ABC8854E09 /* Pods-Currency-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3396581DC72368F14F0110624164E316 /* Pods-Currency-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E703680E702875EEAD1E0FF249AE3B0 /* TCPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB996BD37D28711A597E314FF381C8A2 /* TCPickerView.swift */; };
 		81A2F975614A9B94F265CD3BA816B0A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
-		866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1FA0F43B4E65CD29D57828C7EC07B3 /* IQUIViewController+Additions.swift */; };
-		87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5C4EA9176C5ED0EDC85A7F6DA741F4 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D887C9AD67D2051D198022E1D8A6EC04 /* IQTextView.swift */; };
-		9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4F223BF91A2EE436310232EC1EF85 /* IQKeyboardManagerConstants.swift */; };
-		9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091101C009469A4E49D41E8E2426943A /* IQUIView+IQKeyboardToolbar.swift */; };
+		82DB07E1965CC9FFA0340EDA2C5A05A0 /* ActionSheetLocalePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 79604FCC937E2406EAD726E836523EA0 /* ActionSheetLocalePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83678861FC71A2BE986560E60D265F1C /* ActionSheetPicker-3.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 750DE49FBC1BEE0465D2B8BAB5C62ED4 /* ActionSheetPicker-3.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA0A9D93E7D5467578B337147F912C /* IQUIViewController+Additions.swift */; };
+		87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0BDF86654B702EEC5ED38B20443B9C3 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88D79B46B27D111D42DE2321D58F990 /* IQTextView.swift */; };
+		90E3389D33DD00DE304548BE9C52C69F /* ActionSheetCustomPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 099AF2A0B93E2F96F910A6FD8E180A55 /* ActionSheetCustomPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B2B8491E6B1B8EA1C9ACD37341C726B /* ActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE85C35ACCBE4C42E698263CBF53E3A /* ActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B867960879FDDD089A9E41F027E13B9 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E102E712DC99CA14EDD8E6952DCC02F3 /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457FD1D89B2613AB419CA8A12AD10D51 /* IQKeyboardManagerConstants.swift */; };
+		9BC276383ED044BB0926AFDFD73F928E /* ActionSheetDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A313FC5C08E05532D2DBC3D5B8E7C4 /* ActionSheetDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BDC7634348A70C066DDF654670030 /* IQUIView+IQKeyboardToolbar.swift */; };
 		A25F717B5E0C4E6A6DE933B0BF0F6417 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 767BD7D7C8179136DC97075BA723726F /* IQKeyboardManagerSwift-dummy.m */; };
-		B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6977B04CFD4EC1E9E8224AA89CB6B782 /* IQUITextFieldView+Additions.swift */; };
+		A2F74AC56E76F01E7A69BB8D3A7E3DB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
+		AE84E0341C26A9B5C8E1501C8E8AAC8F /* ActionSheetCustomPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DEB9C995439484F1FBFF166DA8AF835 /* ActionSheetCustomPickerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3278B2B1C553114BB613C2BFB59E8C29 /* IQKeyboardManagerSwift-dummy.m */; };
+		B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2764911A302AEE17EF01E13019556 /* IQUITextFieldView+Additions.swift */; };
 		BB04209DDB72CD325AE09D2EC3EBC380 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */; };
-		C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6432154E24797B2D7AF2129EE657E550 /* IQKeyboardReturnKeyHandler.swift */; };
-		CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D2054665CB08DB6C88DDBE3CE2ED90 /* IQPreviousNextView.swift */; };
-		CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7E038DC31A32B0117106F6F737DD1 /* IQNSArray+Sort.swift */; };
-		EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DDAA7F709391D4C5AC42D5341336C0 /* IQKeyboardManagerConstantsInternal.swift */; };
+		BDBFA441010D34FB51DC32F28314AD8D /* ActionSheetStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F2F4187E82D8223BDAB2FEE07D8F60 /* ActionSheetStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C064D0088D131FEC4E21C3976FB4CB0F /* TCPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C53F8A55142734FFFBA0327581791A /* TCPickerView-dummy.m */; };
+		C2E7AD745E7E24ADD724C3493721D1B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7890B90743171E931AB218C13BF0E99F /* IQKeyboardReturnKeyHandler.swift */; };
+		C6CB72E223B27A0C2B06910EC0FADF67 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AF5D5D69C53E9DB30D30C1083004AC /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CA068FC25E80824549668A53EC9379EC /* DistancePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A85BFC057C085FD2ACBF8DFBD871DA06 /* DistancePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571EE2439C02ED4B823CA238F6CBB6D2 /* IQPreviousNextView.swift */; };
+		CC838339C0E4BB6BB1B5E03D21CB3893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A436A5AFD8FDC4A22D8417FF6F41AD /* IQNSArray+Sort.swift */; };
+		D29CFC5BD51F93870C4A0BB63D2D694B /* TCPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDDF3967BD07F7A99B4499439F87CDE1 /* TCPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA732A6C79E7252A25F23A1497ACD0FD /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = AA74FABA9C61512100A526B8384DE39A /* ActionSheetMultipleStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E049CE807DA7A012BA222DE64920C3D1 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFA31C88C4CB57E3684EAA07B355C9E /* SWActionSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E61ED7FAF083B75902728EB20AC4BD92 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 80E2BE41DC9003ABB3ABE2C5DD8F03F3 /* ActionSheetCustomPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1CC806DD7FCCD860F010AE9280FC2B /* IQKeyboardManagerConstantsInternal.swift */; };
 		EE20C85515D53DE61D8435080677F58E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
-		F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C2630FBC8756BEFC5DAD54F3DEF0D3 /* IQBarButtonItem.swift */; };
+		F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D50D1EED8E30F78813D3D12D154E0C /* IQBarButtonItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		65627542C74747814C1C2679F3B995D4 /* PBXContainerItemProxy */ = {
+		4DF9236D58878630693FF4F43A720FC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E164DCF3861D7EFA082BC89A80328DFF;
+			remoteInfo = "TCPickerView-TCPickerView";
+		};
+		5F54C05DFBB4FECB3575D837E7A13AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E00DBB850674D353A64CEBA9EF1D69;
+			remoteInfo = TCPickerView;
+		};
+		885F0CD6A882D76C4C004FCB22DA114C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965699190112DDBD9B7864D091660DBC;
+			remoteInfo = "ActionSheetPicker-3.0";
+		};
+		8C0CA61C5CF0A0DEC5F071C4F38CBE20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -46,54 +98,101 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00126141699E2D1424118C24D57079C7 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = TCPickerView/Source/Resources/Media.xcassets; sourceTree = "<group>"; };
 		03ED11FA5360B5FE85D052327CCA286F /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
-		091101C009469A4E49D41E8E2426943A /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
-		0F1FA0F43B4E65CD29D57828C7EC07B3 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		099AF2A0B93E2F96F910A6FD8E180A55 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPicker.h; path = Pickers/ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		0E6AC89E3AB740B5A51A6C9BC995F78B /* DistancePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = Pickers/DistancePickerView.m; sourceTree = "<group>"; };
 		145E27682F6E07A2EE44EC73905162AD /* Pods-Currency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Currency.debug.xcconfig"; sourceTree = "<group>"; };
-		19A6810B13E35C3199F940BF4B117C5B /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
-		1DAD48B5237605C364198308127FB553 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		14A436A5AFD8FDC4A22D8417FF6F41AD /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		1DC2764911A302AEE17EF01E13019556 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		200F650BDB05CC3415804BE0A04FE14B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21DDAA7F709391D4C5AC42D5341336C0 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
-		221F638AFD879930344CAFFE239806EF /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
-		22AA79EB12E6AF7AB303E0CBAE21ADA0 /* Pods_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Currency.framework; path = "Pods-Currency.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2045DF89FDFBFBD8A693F3DC63918562 /* TCPickerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPickerTableViewCell.swift; path = TCPickerView/Source/Classes/TCPickerTableViewCell.swift; sourceTree = "<group>"; };
+		2192F4C33D615B2A8F42FA8F12AEDE27 /* Pods_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Currency.framework; path = "Pods-Currency.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		242BE8B083137F2CD07480E47A0D6E3E /* ResourceBundle-TCPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TCPickerView-Info.plist"; sourceTree = "<group>"; };
+		28A313FC5C08E05532D2DBC3D5B8E7C4 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = Pickers/ActionSheetDatePicker.h; sourceTree = "<group>"; };
 		2910C48041053D67243090B5867E9DC5 /* Pods-Currency-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Currency-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2DE1AEDD271C7C25BEFEA98E9DD262D7 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		2B5BDC7634348A70C066DDF654670030 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		2B74EEE4ECEABB67331AC6A0648BED5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F1CC806DD7FCCD860F010AE9280FC2B /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		3278B2B1C553114BB613C2BFB59E8C29 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
 		3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		3396581DC72368F14F0110624164E316 /* Pods-Currency-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Currency-umbrella.h"; sourceTree = "<group>"; };
-		3CFE1543D375F3657F0722C3946EE2AD /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		33D50D1EED8E30F78813D3D12D154E0C /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
 		40C47E585D0DB4DD0F52F27A440C975E /* Pods-Currency.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Currency.modulemap"; sourceTree = "<group>"; };
+		42AA0A9D93E7D5467578B337147F912C /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		457FD1D89B2613AB419CA8A12AD10D51 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		4DA5207CDA4947046BAB2E0EFF978463 /* ActionSheetPicker-3.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ActionSheetPicker-3.0.modulemap"; sourceTree = "<group>"; };
 		51C4005BF619AC7A0C94A966B7A36AD6 /* Pods-Currency-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Currency-resources.sh"; sourceTree = "<group>"; };
+		526C68E7919C8594CDC57C42941991CE /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		571EE2439C02ED4B823CA238F6CBB6D2 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
 		5A9986DEF1F41043FB79B8F5FAD51325 /* Pods-Currency-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Currency-frameworks.sh"; sourceTree = "<group>"; };
-		5DF7E038DC31A32B0117106F6F737DD1 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
-		6432154E24797B2D7AF2129EE657E550 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
-		6977B04CFD4EC1E9E8224AA89CB6B782 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
-		767BD7D7C8179136DC97075BA723726F /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
-		76D2B9E7A07A4EFF46FB74C6E3541415 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		627A50D33FA48037071453AB75379989 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64CBB9D96930ED916CB8000EC9B3B958 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		72AF5D5D69C53E9DB30D30C1083004AC /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = Pickers/ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		730A8F4094EF6EBD308D8838F18059A6 /* TCPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TCPickerView.modulemap; sourceTree = "<group>"; };
+		750DE49FBC1BEE0465D2B8BAB5C62ED4 /* ActionSheetPicker-3.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-umbrella.h"; sourceTree = "<group>"; };
+		778F52DE15BD91D68BC4FADE8796E8D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F2E2A58ACFB4A023E5F160CCA74870 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = Pickers/ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		7890B90743171E931AB218C13BF0E99F /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		79604FCC937E2406EAD726E836523EA0 /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetLocalePicker.h; path = Pickers/ActionSheetLocalePicker.h; sourceTree = "<group>"; };
+		7B281E8CFC62941EB8BB8FA3F23CF042 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		7DEB9C995439484F1FBFF166DA8AF835 /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPickerDelegate.h; path = Pickers/ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		80E2BE41DC9003ABB3ABE2C5DD8F03F3 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetCustomPicker.m; path = Pickers/ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		859E125D69D13D679FC8C83B6C9447CA /* ActionSheetMultipleStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetMultipleStringPicker.h; path = Pickers/ActionSheetMultipleStringPicker.h; sourceTree = "<group>"; };
 		873F06BFE8155202F5C4E4718FD8EBB1 /* Pods-Currency-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Currency-acknowledgements.plist"; sourceTree = "<group>"; };
+		8966AF11A3CA37A5632673F89C291E2F /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		89F2F4187E82D8223BDAB2FEE07D8F60 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		8BBE0A09DA120091C734242D74E86457 /* SWActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWActionSheet.h; path = Pickers/SWActionSheet.h; sourceTree = "<group>"; };
+		8CFBAFB32D5529DF2EDA624255EBEFC6 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AD5C4EA9176C5ED0EDC85A7F6DA741F4 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
-		B54B7E87E7B2AA4BE37E4C774156D323 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
-		B6D2054665CB08DB6C88DDBE3CE2ED90 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
-		B7183B109708659884E4F687AA8504B8 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
-		BB50B2EA16B60164208491F69355110B /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
-		CCE428CC76C7C88152FF055713D309A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D87CBA36C48DAB9EFC055F0453D9C9BD /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D887C9AD67D2051D198022E1D8A6EC04 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
-		E3E4F223BF91A2EE436310232EC1EF85 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		93C158A14635173989DD8BFC453EA4BC /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetLocalePicker.m; path = Pickers/ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		A5728D779D8C2F3674C89DE65AA35530 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = Pickers/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		A85BFC057C085FD2ACBF8DFBD871DA06 /* DistancePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = Pickers/DistancePickerView.h; sourceTree = "<group>"; };
+		A97079425F59A086941BACB27768CE18 /* ActionSheetPicker-3.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActionSheetPicker-3.0-dummy.m"; sourceTree = "<group>"; };
+		AA74FABA9C61512100A526B8384DE39A /* ActionSheetMultipleStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetMultipleStringPicker.m; path = Pickers/ActionSheetMultipleStringPicker.m; sourceTree = "<group>"; };
+		B0BDF86654B702EEC5ED38B20443B9C3 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		BB9ACF75F5BC4D6B0132583DBB9B49AD /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD98CF71A4579D7CC0193BED6A78777E /* ActionSheetPicker-3.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-prefix.pch"; sourceTree = "<group>"; };
+		BDDF3967BD07F7A99B4499439F87CDE1 /* TCPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCPickerView-umbrella.h"; sourceTree = "<group>"; };
+		C283E187C453B66CE691A1DD59E0E9E5 /* TCPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TCPickerView.framework; path = TCPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C68C01DBBACBFE71C110679CA12D99F0 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		CB996BD37D28711A597E314FF381C8A2 /* TCPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPickerView.swift; path = TCPickerView/Source/Classes/TCPickerView.swift; sourceTree = "<group>"; };
+		CE01B202CBA8FF2AEBE6D95B66896094 /* ActionSheetPicker-3.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ActionSheetPicker-3.0.xcconfig"; sourceTree = "<group>"; };
+		D4C53F8A55142734FFFBA0327581791A /* TCPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TCPickerView-dummy.m"; sourceTree = "<group>"; };
+		D85EB31443A1DA85816BD148A54ADE79 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		D881DCE0E7EB92818920B03884EB01C3 /* TCPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TCPickerView-prefix.pch"; sourceTree = "<group>"; };
+		DBAC166C3703A44D6FABE99CE60BB455 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		DDFA31C88C4CB57E3684EAA07B355C9E /* SWActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = Pickers/SWActionSheet.m; sourceTree = "<group>"; };
+		E102E712DC99CA14EDD8E6952DCC02F3 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		E36869EE4C58A39717A638586B5471B5 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		E4C45876E947AEFCCBF5B530F7C1F3E6 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
 		E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		E9CCF7D93C6248F9B8FE8E3134B41D58 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		E88D79B46B27D111D42DE2321D58F990 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
 		EA62A8F291C56B38C7E21E3BBEEFFE88 /* Pods-Currency-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Currency-dummy.m"; sourceTree = "<group>"; };
 		ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F5C2630FBC8756BEFC5DAD54F3DEF0D3 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		EE6F7E27FC0E58E461B0871B7D55A60C /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		EE9F8BD752BFDCB68E6C6615846E27A3 /* TCPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TCPickerView.xcconfig; sourceTree = "<group>"; };
+		EEE85C35ACCBE4C42E698263CBF53E3A /* ActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetPicker.h; path = Pickers/ActionSheetPicker.h; sourceTree = "<group>"; };
+		F9833E8B290191DD7161AE216AC70F65 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		FB60A0DDD4BEF0D67851F258B568F615 /* ActionSheetPicker_3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ActionSheetPicker_3_0.framework; path = "ActionSheetPicker-3.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD13DF04C28FDFD94E42CBBBA57E8E2E /* TCPickerView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TCPickerView.bundle; path = "TCPickerView-TCPickerView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		66E7AEBB6C21CD1AD0E618FAEF359843 /* Frameworks */ = {
+		66076240C2ED6C56B870D99D6432B3F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				119FD86C6EC201DCD4DEFF2AFDB1A84E /* Foundation.framework in Frameworks */,
+				CC838339C0E4BB6BB1B5E03D21CB3893 /* Foundation.framework in Frameworks */,
+				A2F74AC56E76F01E7A69BB8D3A7E3DB8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A166AB3BBEB8A43596CED95B59C19BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +207,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		822125B947E5C7088A97272054EAA99E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20951B518ECE90FEA15F57CFB3ACAB5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0662D87AF3F15AF18F1270F0E861B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E7AD745E7E24ADD724C3493721D1B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,29 +232,6 @@
 				8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		17720A3D38FC804540BADACE655730E9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CCE428CC76C7C88152FF055713D309A0 /* Info.plist */,
-				19A6810B13E35C3199F940BF4B117C5B /* IQKeyboardManagerSwift.modulemap */,
-				B54B7E87E7B2AA4BE37E4C774156D323 /* IQKeyboardManagerSwift.xcconfig */,
-				767BD7D7C8179136DC97075BA723726F /* IQKeyboardManagerSwift-dummy.m */,
-				76D2B9E7A07A4EFF46FB74C6E3541415 /* IQKeyboardManagerSwift-prefix.pch */,
-				AD5C4EA9176C5ED0EDC85A7F6DA741F4 /* IQKeyboardManagerSwift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/IQKeyboardManagerSwift";
-			sourceTree = "<group>";
-		};
-		27D8D5170FDB35BBF56315D37614CF91 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D87CBA36C48DAB9EFC055F0453D9C9BD /* IQKeyboardManagerSwift.framework */,
-				22AA79EB12E6AF7AB303E0CBAE21ADA0 /* Pods_Currency.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		2DE90146291193C803A63304CED8DE1D /* Targets Support Files */ = {
@@ -168,38 +260,26 @@
 			path = "Target Support Files/Pods-Currency";
 			sourceTree = "<group>";
 		};
-		584F8138EF2F895A1F55850C518A4C08 /* IQKeyboardManagerSwift */ = {
+		3CB7A3E5FDD38851A05BF2797B0D28A8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5C2630FBC8756BEFC5DAD54F3DEF0D3 /* IQBarButtonItem.swift */,
-				3CFE1543D375F3657F0722C3946EE2AD /* IQKeyboardManager.swift */,
-				E3E4F223BF91A2EE436310232EC1EF85 /* IQKeyboardManagerConstants.swift */,
-				21DDAA7F709391D4C5AC42D5341336C0 /* IQKeyboardManagerConstantsInternal.swift */,
-				6432154E24797B2D7AF2129EE657E550 /* IQKeyboardReturnKeyHandler.swift */,
-				5DF7E038DC31A32B0117106F6F737DD1 /* IQNSArray+Sort.swift */,
-				B6D2054665CB08DB6C88DDBE3CE2ED90 /* IQPreviousNextView.swift */,
-				D887C9AD67D2051D198022E1D8A6EC04 /* IQTextView.swift */,
-				2DE1AEDD271C7C25BEFEA98E9DD262D7 /* IQTitleBarButtonItem.swift */,
-				221F638AFD879930344CAFFE239806EF /* IQToolbar.swift */,
-				1DAD48B5237605C364198308127FB553 /* IQUIScrollView+Additions.swift */,
-				6977B04CFD4EC1E9E8224AA89CB6B782 /* IQUITextFieldView+Additions.swift */,
-				BB50B2EA16B60164208491F69355110B /* IQUIView+Hierarchy.swift */,
-				091101C009469A4E49D41E8E2426943A /* IQUIView+IQKeyboardToolbar.swift */,
-				0F1FA0F43B4E65CD29D57828C7EC07B3 /* IQUIViewController+Additions.swift */,
-				E9CCF7D93C6248F9B8FE8E3134B41D58 /* IQUIWindow+Hierarchy.swift */,
-				85860088B9C3398345BC184C3C1E31E8 /* Resources */,
-				17720A3D38FC804540BADACE655730E9 /* Support Files */,
+				4DA5207CDA4947046BAB2E0EFF978463 /* ActionSheetPicker-3.0.modulemap */,
+				CE01B202CBA8FF2AEBE6D95B66896094 /* ActionSheetPicker-3.0.xcconfig */,
+				A97079425F59A086941BACB27768CE18 /* ActionSheetPicker-3.0-dummy.m */,
+				BD98CF71A4579D7CC0193BED6A78777E /* ActionSheetPicker-3.0-prefix.pch */,
+				750DE49FBC1BEE0465D2B8BAB5C62ED4 /* ActionSheetPicker-3.0-umbrella.h */,
+				2B74EEE4ECEABB67331AC6A0648BED5C /* Info.plist */,
 			);
-			name = IQKeyboardManagerSwift;
-			path = IQKeyboardManagerSwift;
+			name = "Support Files";
+			path = "../Target Support Files/ActionSheetPicker-3.0";
 			sourceTree = "<group>";
 		};
-		6A31A35F6700A8EF87EB49BE22C289BF /* Pods */ = {
+		70ED6FA9FA2C961D60CEA5CF49772167 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				584F8138EF2F895A1F55850C518A4C08 /* IQKeyboardManagerSwift */,
+				F9833E8B290191DD7161AE216AC70F65 /* IQKeyboardManager.bundle */,
 			);
-			name = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -207,18 +287,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				6A31A35F6700A8EF87EB49BE22C289BF /* Pods */,
-				27D8D5170FDB35BBF56315D37614CF91 /* Products */,
+				BBA66CD460793AE42D35348855A63E93 /* Pods */,
+				E166CF49B6BD67670D8799D945881940 /* Products */,
 				2DE90146291193C803A63304CED8DE1D /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		85860088B9C3398345BC184C3C1E31E8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B7183B109708659884E4F687AA8504B8 /* IQKeyboardManager.bundle */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */ = {
@@ -232,14 +304,167 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		AA5D1752E84B11732BE3AF429311779D /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				33D50D1EED8E30F78813D3D12D154E0C /* IQBarButtonItem.swift */,
+				EE6F7E27FC0E58E461B0871B7D55A60C /* IQKeyboardManager.swift */,
+				457FD1D89B2613AB419CA8A12AD10D51 /* IQKeyboardManagerConstants.swift */,
+				2F1CC806DD7FCCD860F010AE9280FC2B /* IQKeyboardManagerConstantsInternal.swift */,
+				7890B90743171E931AB218C13BF0E99F /* IQKeyboardReturnKeyHandler.swift */,
+				14A436A5AFD8FDC4A22D8417FF6F41AD /* IQNSArray+Sort.swift */,
+				571EE2439C02ED4B823CA238F6CBB6D2 /* IQPreviousNextView.swift */,
+				E88D79B46B27D111D42DE2321D58F990 /* IQTextView.swift */,
+				E4C45876E947AEFCCBF5B530F7C1F3E6 /* IQTitleBarButtonItem.swift */,
+				E36869EE4C58A39717A638586B5471B5 /* IQToolbar.swift */,
+				8966AF11A3CA37A5632673F89C291E2F /* IQUIScrollView+Additions.swift */,
+				1DC2764911A302AEE17EF01E13019556 /* IQUITextFieldView+Additions.swift */,
+				D85EB31443A1DA85816BD148A54ADE79 /* IQUIView+Hierarchy.swift */,
+				2B5BDC7634348A70C066DDF654670030 /* IQUIView+IQKeyboardToolbar.swift */,
+				42AA0A9D93E7D5467578B337147F912C /* IQUIViewController+Additions.swift */,
+				526C68E7919C8594CDC57C42941991CE /* IQUIWindow+Hierarchy.swift */,
+				70ED6FA9FA2C961D60CEA5CF49772167 /* Resources */,
+				F7C3B8AC608B368464294F8D39CEDAE2 /* Support Files */,
+			);
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		B7144B304CB7F664BE9A1F55946D2F8A /* TCPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				2045DF89FDFBFBD8A693F3DC63918562 /* TCPickerTableViewCell.swift */,
+				CB996BD37D28711A597E314FF381C8A2 /* TCPickerView.swift */,
+				BE8EA54B8A8AA1F11F1AFB45707A5A16 /* Resources */,
+				C74DA37278269E255DCFF26A6CD8E00C /* Support Files */,
+			);
+			name = TCPickerView;
+			path = TCPickerView;
+			sourceTree = "<group>";
+		};
+		BBA66CD460793AE42D35348855A63E93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C928E81D8F0484A4199732B71B7B4D94 /* ActionSheetPicker-3.0 */,
+				AA5D1752E84B11732BE3AF429311779D /* IQKeyboardManagerSwift */,
+				B7144B304CB7F664BE9A1F55946D2F8A /* TCPickerView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE8EA54B8A8AA1F11F1AFB45707A5A16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00126141699E2D1424118C24D57079C7 /* Media.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C74DA37278269E255DCFF26A6CD8E00C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				627A50D33FA48037071453AB75379989 /* Info.plist */,
+				242BE8B083137F2CD07480E47A0D6E3E /* ResourceBundle-TCPickerView-Info.plist */,
+				730A8F4094EF6EBD308D8838F18059A6 /* TCPickerView.modulemap */,
+				EE9F8BD752BFDCB68E6C6615846E27A3 /* TCPickerView.xcconfig */,
+				D4C53F8A55142734FFFBA0327581791A /* TCPickerView-dummy.m */,
+				D881DCE0E7EB92818920B03884EB01C3 /* TCPickerView-prefix.pch */,
+				BDDF3967BD07F7A99B4499439F87CDE1 /* TCPickerView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TCPickerView";
+			sourceTree = "<group>";
+		};
+		C928E81D8F0484A4199732B71B7B4D94 /* ActionSheetPicker-3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				A5728D779D8C2F3674C89DE65AA35530 /* AbstractActionSheetPicker.h */,
+				E102E712DC99CA14EDD8E6952DCC02F3 /* AbstractActionSheetPicker.m */,
+				099AF2A0B93E2F96F910A6FD8E180A55 /* ActionSheetCustomPicker.h */,
+				80E2BE41DC9003ABB3ABE2C5DD8F03F3 /* ActionSheetCustomPicker.m */,
+				7DEB9C995439484F1FBFF166DA8AF835 /* ActionSheetCustomPickerDelegate.h */,
+				28A313FC5C08E05532D2DBC3D5B8E7C4 /* ActionSheetDatePicker.h */,
+				7B281E8CFC62941EB8BB8FA3F23CF042 /* ActionSheetDatePicker.m */,
+				77F2E2A58ACFB4A023E5F160CCA74870 /* ActionSheetDistancePicker.h */,
+				64CBB9D96930ED916CB8000EC9B3B958 /* ActionSheetDistancePicker.m */,
+				79604FCC937E2406EAD726E836523EA0 /* ActionSheetLocalePicker.h */,
+				93C158A14635173989DD8BFC453EA4BC /* ActionSheetLocalePicker.m */,
+				859E125D69D13D679FC8C83B6C9447CA /* ActionSheetMultipleStringPicker.h */,
+				AA74FABA9C61512100A526B8384DE39A /* ActionSheetMultipleStringPicker.m */,
+				EEE85C35ACCBE4C42E698263CBF53E3A /* ActionSheetPicker.h */,
+				89F2F4187E82D8223BDAB2FEE07D8F60 /* ActionSheetStringPicker.h */,
+				72AF5D5D69C53E9DB30D30C1083004AC /* ActionSheetStringPicker.m */,
+				A85BFC057C085FD2ACBF8DFBD871DA06 /* DistancePickerView.h */,
+				0E6AC89E3AB740B5A51A6C9BC995F78B /* DistancePickerView.m */,
+				8BBE0A09DA120091C734242D74E86457 /* SWActionSheet.h */,
+				DDFA31C88C4CB57E3684EAA07B355C9E /* SWActionSheet.m */,
+				3CB7A3E5FDD38851A05BF2797B0D28A8 /* Support Files */,
+			);
+			name = "ActionSheetPicker-3.0";
+			path = "ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+		E166CF49B6BD67670D8799D945881940 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB60A0DDD4BEF0D67851F258B568F615 /* ActionSheetPicker_3_0.framework */,
+				BB9ACF75F5BC4D6B0132583DBB9B49AD /* IQKeyboardManagerSwift.framework */,
+				2192F4C33D615B2A8F42FA8F12AEDE27 /* Pods_Currency.framework */,
+				FD13DF04C28FDFD94E42CBBBA57E8E2E /* TCPickerView.bundle */,
+				C283E187C453B66CE691A1DD59E0E9E5 /* TCPickerView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7C3B8AC608B368464294F8D39CEDAE2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				778F52DE15BD91D68BC4FADE8796E8D1 /* Info.plist */,
+				DBAC166C3703A44D6FABE99CE60BB455 /* IQKeyboardManagerSwift.modulemap */,
+				8CFBAFB32D5529DF2EDA624255EBEFC6 /* IQKeyboardManagerSwift.xcconfig */,
+				3278B2B1C553114BB613C2BFB59E8C29 /* IQKeyboardManagerSwift-dummy.m */,
+				C68C01DBBACBFE71C110679CA12D99F0 /* IQKeyboardManagerSwift-prefix.pch */,
+				B0BDF86654B702EEC5ED38B20443B9C3 /* IQKeyboardManagerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C020EAB77D5AAD2E69F9CEB2377EB9F4 /* Headers */ = {
+		38A40B9F300825D6AAE5A9BDD9D0080F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039B57D93D164D3ED084500F08C1811B /* Pods-Currency-umbrella.h in Headers */,
+				73B5B89735246241B271F8ABC8854E09 /* Pods-Currency-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7168AF4B49EE1459BCE8AC958F7EC526 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2680FB2A9AAFE79796C23A20390CEF45 /* AbstractActionSheetPicker.h in Headers */,
+				90E3389D33DD00DE304548BE9C52C69F /* ActionSheetCustomPicker.h in Headers */,
+				AE84E0341C26A9B5C8E1501C8E8AAC8F /* ActionSheetCustomPickerDelegate.h in Headers */,
+				9BC276383ED044BB0926AFDFD73F928E /* ActionSheetDatePicker.h in Headers */,
+				1648AB9E52071D70CD79280AB21C94D1 /* ActionSheetDistancePicker.h in Headers */,
+				82DB07E1965CC9FFA0340EDA2C5A05A0 /* ActionSheetLocalePicker.h in Headers */,
+				6C16BD3BCB1B65194E7CEA5CF15AD446 /* ActionSheetMultipleStringPicker.h in Headers */,
+				83678861FC71A2BE986560E60D265F1C /* ActionSheetPicker-3.0-umbrella.h in Headers */,
+				9B2B8491E6B1B8EA1C9ACD37341C726B /* ActionSheetPicker.h in Headers */,
+				BDBFA441010D34FB51DC32F28314AD8D /* ActionSheetStringPicker.h in Headers */,
+				CA068FC25E80824549668A53EC9379EC /* DistancePickerView.h in Headers */,
+				0E3BFC96C6A7CCADAF3DA6C3C80F35EC /* SWActionSheet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE2FBB72D8A461835D130C478EFC9F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29CFC5BD51F93870C4A0BB63D2D694B /* TCPickerView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,22 +479,60 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2C430F80FEA9F2EBFF094C12A05124B2 /* Pods-Currency */ = {
+		18E00DBB850674D353A64CEBA9EF1D69 /* TCPickerView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C3F8F9050369DE481052CDA3DE4EC5B /* Build configuration list for PBXNativeTarget "Pods-Currency" */;
+			buildConfigurationList = 0DB44D508417978B9ACD7F289BB1A22C /* Build configuration list for PBXNativeTarget "TCPickerView" */;
 			buildPhases = (
-				E17B22C51BAFC373DE181134CD9B1F5B /* Sources */,
-				66E7AEBB6C21CD1AD0E618FAEF359843 /* Frameworks */,
-				C020EAB77D5AAD2E69F9CEB2377EB9F4 /* Headers */,
+				88CDE81E4F9599EA6EEAE364201442F8 /* Sources */,
+				E0662D87AF3F15AF18F1270F0E861B8F /* Frameworks */,
+				875F743E57CFD52365BD7B26BBAE2CD0 /* Resources */,
+				ABE2FBB72D8A461835D130C478EFC9F5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				259E1D378BBF553F21440E4EE38AF41D /* PBXTargetDependency */,
+				533080467CA66417FCE90811EF1DD2BC /* PBXTargetDependency */,
+			);
+			name = TCPickerView;
+			productName = TCPickerView;
+			productReference = C283E187C453B66CE691A1DD59E0E9E5 /* TCPickerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A4EBEAC03B8F0B4D2BE13BA0BE60602 /* Pods-Currency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC29C52F85D8D59216C1602897B2AEE /* Build configuration list for PBXNativeTarget "Pods-Currency" */;
+			buildPhases = (
+				FCF5716A1331E7CDABFCA0752682C58E /* Sources */,
+				822125B947E5C7088A97272054EAA99E /* Frameworks */,
+				38A40B9F300825D6AAE5A9BDD9D0080F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21C86F02E2F08DC6CC924DE29F0BA42D /* PBXTargetDependency */,
+				30EA21C1A4D35A7A19A70DE413F0FC83 /* PBXTargetDependency */,
+				DF39F669D8BC2DED3FB538ACA1BF7C28 /* PBXTargetDependency */,
 			);
 			name = "Pods-Currency";
 			productName = "Pods-Currency";
-			productReference = 22AA79EB12E6AF7AB303E0CBAE21ADA0 /* Pods_Currency.framework */;
+			productReference = 2192F4C33D615B2A8F42FA8F12AEDE27 /* Pods_Currency.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		965699190112DDBD9B7864D091660DBC /* ActionSheetPicker-3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E127E32D0465A08437982F8B2A3077E /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */;
+			buildPhases = (
+				93F271AD7E26CF5BCFADCFB7A504897D /* Sources */,
+				66076240C2ED6C56B870D99D6432B3F4 /* Frameworks */,
+				7168AF4B49EE1459BCE8AC958F7EC526 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ActionSheetPicker-3.0";
+			productName = "ActionSheetPicker-3.0";
+			productReference = FB60A0DDD4BEF0D67851F258B568F615 /* ActionSheetPicker_3_0.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */ = {
@@ -287,8 +550,25 @@
 			);
 			name = IQKeyboardManagerSwift;
 			productName = IQKeyboardManagerSwift;
-			productReference = D87CBA36C48DAB9EFC055F0453D9C9BD /* IQKeyboardManagerSwift.framework */;
+			productReference = BB9ACF75F5BC4D6B0132583DBB9B49AD /* IQKeyboardManagerSwift.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		E164DCF3861D7EFA082BC89A80328DFF /* TCPickerView-TCPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB04CBD60F1E0AA48A858A53CA69C62A /* Build configuration list for PBXNativeTarget "TCPickerView-TCPickerView" */;
+			buildPhases = (
+				0A9EB70E167301E61B96C67D76BBBA29 /* Sources */,
+				7A166AB3BBEB8A43596CED95B59C19BA /* Frameworks */,
+				898A5DF71A58F920F8C71DF7FD37C397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TCPickerView-TCPickerView";
+			productName = "TCPickerView-TCPickerView";
+			productReference = FD13DF04C28FDFD94E42CBBBA57E8E2E /* TCPickerView.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -307,17 +587,36 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 27D8D5170FDB35BBF56315D37614CF91 /* Products */;
+			productRefGroup = E166CF49B6BD67670D8799D945881940 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				965699190112DDBD9B7864D091660DBC /* ActionSheetPicker-3.0 */,
 				C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */,
-				2C430F80FEA9F2EBFF094C12A05124B2 /* Pods-Currency */,
+				6A4EBEAC03B8F0B4D2BE13BA0BE60602 /* Pods-Currency */,
+				18E00DBB850674D353A64CEBA9EF1D69 /* TCPickerView */,
+				E164DCF3861D7EFA082BC89A80328DFF /* TCPickerView-TCPickerView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		875F743E57CFD52365BD7B26BBAE2CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF5292E8BC416738060C43B2A078682 /* TCPickerView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		898A5DF71A58F920F8C71DF7FD37C397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049D3303FFC810B2D01B75141FE2A61E /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		918D58E08AC7FD6CC66B75FF048005F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,6 +628,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A9EB70E167301E61B96C67D76BBBA29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88CDE81E4F9599EA6EEAE364201442F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490EB82E3DDE7AFA6F17A3458FD122FD /* TCPickerTableViewCell.swift in Sources */,
+				C064D0088D131FEC4E21C3976FB4CB0F /* TCPickerView-dummy.m in Sources */,
+				7E703680E702875EEAD1E0FF249AE3B0 /* TCPickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F271AD7E26CF5BCFADCFB7A504897D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B867960879FDDD089A9E41F027E13B9 /* AbstractActionSheetPicker.m in Sources */,
+				E61ED7FAF083B75902728EB20AC4BD92 /* ActionSheetCustomPicker.m in Sources */,
+				1A0130E51AF422F68818416677EE6595 /* ActionSheetDatePicker.m in Sources */,
+				246DD685C951FFF04D55232211F076CD /* ActionSheetDistancePicker.m in Sources */,
+				430E0A46B42F47FF79AE16168D1613E9 /* ActionSheetLocalePicker.m in Sources */,
+				DA732A6C79E7252A25F23A1497ACD0FD /* ActionSheetMultipleStringPicker.m in Sources */,
+				29C34B43AFA7A1D88AB188801C76E08C /* ActionSheetPicker-3.0-dummy.m in Sources */,
+				C6CB72E223B27A0C2B06910EC0FADF67 /* ActionSheetStringPicker.m in Sources */,
+				3C8D2470783809376BA929A9603C21D9 /* DistancePickerView.m in Sources */,
+				E049CE807DA7A012BA222DE64920C3D1 /* SWActionSheet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0CAA73D50E134E589B648ABF6682839 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,22 +686,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E17B22C51BAFC373DE181134CD9B1F5B /* Sources */ = {
+		FCF5716A1331E7CDABFCA0752682C58E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5630A4C8C0C3567FA441965B3BB55BD3 /* Pods-Currency-dummy.m in Sources */,
+				12DA6ADB40FE62F9F5F6826E8099AB37 /* Pods-Currency-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		259E1D378BBF553F21440E4EE38AF41D /* PBXTargetDependency */ = {
+		21C86F02E2F08DC6CC924DE29F0BA42D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ActionSheetPicker-3.0";
+			target = 965699190112DDBD9B7864D091660DBC /* ActionSheetPicker-3.0 */;
+			targetProxy = 885F0CD6A882D76C4C004FCB22DA114C /* PBXContainerItemProxy */;
+		};
+		30EA21C1A4D35A7A19A70DE413F0FC83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IQKeyboardManagerSwift;
 			target = C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */;
-			targetProxy = 65627542C74747814C1C2679F3B995D4 /* PBXContainerItemProxy */;
+			targetProxy = 8C0CA61C5CF0A0DEC5F071C4F38CBE20 /* PBXContainerItemProxy */;
+		};
+		533080467CA66417FCE90811EF1DD2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TCPickerView-TCPickerView";
+			target = E164DCF3861D7EFA082BC89A80328DFF /* TCPickerView-TCPickerView */;
+			targetProxy = 4DF9236D58878630693FF4F43A720FC3 /* PBXContainerItemProxy */;
+		};
+		DF39F669D8BC2DED3FB538ACA1BF7C28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TCPickerView;
+			target = 18E00DBB850674D353A64CEBA9EF1D69 /* TCPickerView */;
+			targetProxy = 5F54C05DFBB4FECB3575D837E7A13AD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -436,9 +787,41 @@
 			};
 			name = Debug;
 		};
+		15A7D42BE185CDEE072F8816E4C69A46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9F8BD752BFDCB68E6C6615846E27A3 /* TCPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TCPickerView";
+				INFOPLIST_FILE = "Target Support Files/TCPickerView/ResourceBundle-TCPickerView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = TCPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2143EF215975C22C9C337B6AEBB95A0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9F8BD752BFDCB68E6C6615846E27A3 /* TCPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TCPickerView";
+				INFOPLIST_FILE = "Target Support Files/TCPickerView/ResourceBundle-TCPickerView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = TCPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		314362E8707D72D034FEC8CFBFB11726 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B54B7E87E7B2AA4BE37E4C774156D323 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 8CFBAFB32D5529DF2EDA624255EBEFC6 /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -467,9 +850,9 @@
 			};
 			name = Debug;
 		};
-		6EFA35A4BCC77739031B881038239F86 /* Release */ = {
+		35E7405CC57B7B96D791B63E88FBB04F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03ED11FA5360B5FE85D052327CCA286F /* Pods-Currency.release.xcconfig */;
+			baseConfigurationReference = 145E27682F6E07A2EE44EC73905162AD /* Pods-Currency.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -494,13 +877,75 @@
 				PRODUCT_NAME = Pods_Currency;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7032980DDC1470188FFB3D11F6473E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE01B202CBA8FF2AEBE6D95B66896094 /* ActionSheetPicker-3.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
+				PRODUCT_NAME = ActionSheetPicker_3_0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		7F82FE7693DE3BA0159DD85722885B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9F8BD752BFDCB68E6C6615846E27A3 /* TCPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TCPickerView/TCPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TCPickerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TCPickerView/TCPickerView.modulemap";
+				PRODUCT_NAME = TCPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8E8333274F4AB64785B04AB5B2A37231 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -560,9 +1005,106 @@
 			};
 			name = Release;
 		};
+		A520FCB81E0163DFED6F8812238B5B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE01B202CBA8FF2AEBE6D95B66896094 /* ActionSheetPicker-3.0.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
+				PRODUCT_NAME = ActionSheetPicker_3_0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB554F4936AE24035D3B4EC69BD5A749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9F8BD752BFDCB68E6C6615846E27A3 /* TCPickerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TCPickerView/TCPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TCPickerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TCPickerView/TCPickerView.modulemap";
+				PRODUCT_NAME = TCPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B13BB7D62014219E4852E7B8BFE098A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03ED11FA5360B5FE85D052327CCA286F /* Pods-Currency.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Currency/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Currency/Pods-Currency.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Currency;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DDCD46C296262746A887ADB55B1EFAC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B54B7E87E7B2AA4BE37E4C774156D323 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 8CFBAFB32D5529DF2EDA624255EBEFC6 /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -592,44 +1134,27 @@
 			};
 			name = Release;
 		};
-		EE6F7B9760369F05757D48EA73DB7712 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 145E27682F6E07A2EE44EC73905162AD /* Pods-Currency.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Currency/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Currency/Pods-Currency.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Currency;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0DB44D508417978B9ACD7F289BB1A22C /* Build configuration list for PBXNativeTarget "TCPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F82FE7693DE3BA0159DD85722885B59 /* Debug */,
+				AB554F4936AE24035D3B4EC69BD5A749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC29C52F85D8D59216C1602897B2AEE /* Build configuration list for PBXNativeTarget "Pods-Currency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E7405CC57B7B96D791B63E88FBB04F /* Debug */,
+				B13BB7D62014219E4852E7B8BFE098A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -639,11 +1164,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C3F8F9050369DE481052CDA3DE4EC5B /* Build configuration list for PBXNativeTarget "Pods-Currency" */ = {
+		7E127E32D0465A08437982F8B2A3077E /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE6F7B9760369F05757D48EA73DB7712 /* Debug */,
-				6EFA35A4BCC77739031B881038239F86 /* Release */,
+				A520FCB81E0163DFED6F8812238B5B4A /* Debug */,
+				7032980DDC1470188FFB3D11F6473E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB04CBD60F1E0AA48A858A53CA69C62A /* Build configuration list for PBXNativeTarget "TCPickerView-TCPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15A7D42BE185CDEE072F8816E4C69A46 /* Debug */,
+				2143EF215975C22C9C337B6AEBB95A0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
