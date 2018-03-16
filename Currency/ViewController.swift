@@ -191,7 +191,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         for value in allC{
             names.append(value.fullName)
         }
-        ActionSheetMultipleStringPicker.show(withTitle: "Multiple String Picker", rows: [
+        ActionSheetMultipleStringPicker.show(withTitle: "Add Currency", rows: [
             names,
             ], initialSelection: [1, 1], doneBlock: {
                 picker, indexes, values in
@@ -200,8 +200,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
                 let index = indexes![0] as! Int
                 let currentEntry = allC[index]
                 self.currencyDict[currentEntry.symbol] = currentEntry
-                self.getConversionTable()
-                self.tableView.reloadData()
+                DispatchQueue.main.async {
+                    self.getConversionTable()
+                    self.tableView.reloadData()
+                }
+                
                 
                 return
         }, cancel: { ActionMultipleStringCancelBlock in return }, origin: sender)
