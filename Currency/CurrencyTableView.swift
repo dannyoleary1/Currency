@@ -8,6 +8,10 @@
 
 import UIKit
 
+/***********************************************************************
+ // For our custom tableCell. This is what will be displayed in the
+ // TableView.
+ **********************************************************************/
 class CurrencyTableView: UITableViewCell {
     
     @IBOutlet weak var fullName: UILabel!

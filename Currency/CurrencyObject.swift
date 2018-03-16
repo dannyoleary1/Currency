@@ -8,15 +8,20 @@
 
 import UIKit
 
+/*************************************************************************************
+ // CurrencyObject that will be used to create our currency objects.
+ ************************************************************************************/
 class CurrencyObject{
     var fullName: String!
     var symbol: String!
     var value: String!
     var flag: String!
+    
     init(fullName: String?, symbol: String?, value: String?, flag: String?) {
         self.fullName = fullName
         self.symbol = symbol
         self.value = value
         self.flag = flag
     }
+    
 }

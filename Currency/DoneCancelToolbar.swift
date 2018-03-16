@@ -9,7 +9,12 @@
 
 import UIKit
 
-/** https://stackoverflow.com/questions/38133853/how-to-add-a-return-key-on-a-decimal-pad-in-swift **/
+
+/*********************************************************************************************
+ // Extending the UITextField to be able to add a 'done' button that allows you to dismiss
+ // the decimal pad that we are using. 
+ //https://stackoverflow.com/questions/38133853/how-to-add-a-return-key-on-a-decimal-pad-in-swift
+ ********************************************************************************************/
 extension UITextField{
     
     func addDoneButtonToKeyboard(myAction:Selector?){
