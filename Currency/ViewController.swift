@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import TCPickerView
+import NVActivityIndicatorView
 import ActionSheetPicker_3_0
 
 
@@ -85,10 +85,15 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         var request = URLRequest(url: URL(string: urlStr)!)
         request.httpMethod = "GET"
         
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        indicator.center = view.center
-        view.addSubview(indicator)
-        indicator.startAnimating()
+        let x = self.view.frame.width / 2
+        let y = self.view.frame.height / 2
+        let frame = CGRect(x: (x - 40), y: (y - 50), width: 45, height: 45)
+        var activityIndicator = NVActivityIndicatorView(frame: frame)
+        activityIndicator.type = . ballScale // add your type
+        activityIndicator.color = UIColor.red // add your color
+        
+        self.view.addSubview(activityIndicator) // or use  webView.addSubview(activityIndicator)
+        activityIndicator.startAnimating()
         
         let session = URLSession.shared
         let task = session.dataTask(with: request, completionHandler: { data, response, error -> Void in
@@ -117,7 +122,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
                             }
                         }
                         DispatchQueue.main.async {
-                            indicator.stopAnimating()
+                            activityIndicator.stopAnimating()
+                            activityIndicator.removeFromSuperview()
                             self.lastUpdatedDate = Date()
                         }
                     }

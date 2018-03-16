@@ -1,18 +1,20 @@
 PODS:
   - ActionSheetPicker-3.0 (2.3.0)
   - IQKeyboardManagerSwift (5.0.8)
-  - TCPickerView (0.1.9)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
   - IQKeyboardManagerSwift
-  - TCPickerView
+  - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
-  TCPickerView: 4bacd1f81121b3a12ff4624da657e3dfd1738383
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
 
-PODFILE CHECKSUM: ecddb3a21294f4a944402a479f761f70a09ffd9f
+PODFILE CHECKSUM: 2af56b9ef08e8424525db23447de3330dae000e7
 
 COCOAPODS: 1.4.0
