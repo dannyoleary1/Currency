@@ -144,7 +144,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
      ******************************************************************************/
     @IBAction func convert(_ sender: Any) {
         //TODO check if this is meant to make a new call.
-        //getConversionTable()
+       getConversionTable()
        convertCurrencies()
     }
     
