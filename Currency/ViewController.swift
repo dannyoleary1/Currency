@@ -120,7 +120,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
                         DispatchQueue.main.async {
                             activityIndicator.stopAnimating()
                             activityIndicator.removeFromSuperview()
+                            self.dateformatter.dateFormat = "dd/MM/yyyy hh:mm a"
                             self.lastUpdatedDate = Date()
+                            self.lastUpdatedDateLabel.text = self.dateformatter.string(from: self.lastUpdatedDate)
+                            
                         }
                     }
                 }
